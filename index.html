@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="./custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<script>
+    function copyToClipboard() {
+        var citation = document.querySelector('.card-text').innerText;
+        navigator.clipboard.writeText(citation).then(function () {
+            alert('BibTeX citation copied to clipboard!');
+        }, function (err) {
+            console.error('Could not copy text: ', err);
+        });
+    }
+</script>
+
+<body class="mt-5">
+    <div class="container text-center">
+        <h2>Me, Myself and AI: The Situational Awareness Dataset for LLMs</h2>
+        <h6 class="mt-4">
+            <a class="link-info text-decoration-none" href="mailto:rudolf.laine@gmail.com">Rudolf Laine</a><sup>1</sup>,
+            <a class="link-info text-decoration-none" href="#">Bilal Chughtai</a><sup>1</sup>,
+            <a class="link-info text-decoration-none" href="#">Jan Betley</a><sup>2</sup>,
+            <a class="link-info text-decoration-none" href="#">Kaivalya Hariharan</a><sup>3</sup>,
+            <a class="link-info text-decoration-none" href="#">Jérémy Scheurer</a><sup>4</sup>,
+            <a class="link-info text-decoration-none" href="#">Mikita Balesni</a><sup>4</sup>,
+            <a class="link-info text-decoration-none" href="#">Marius Hobbhahn</a><sup>4</sup>,
+            <a class="link-info text-decoration-none" href="#">Alexander Meinke</a><sup>4</sup>,
+            <a class="link-info text-decoration-none" href="#">Owain Evans</a><sup>2</sup>
+        </h6>
+        <p class="mt-3"><sup>1</sup>Independent, <sup>2</sup>Constellation, <sup>3</sup> MIT, <sup>4</sup>Apollo
+            Research
+        </p>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-lg-2 col-md-3 col-sm-4 d-flex flex-column align-items-center">
+            <a class="link-info text-decoration-none text-center" href="https://arxiv.org/abs/2307.15043">
+                <div class="icon mb-2"><i class="bi-file-earmark-pdf" style="font-size: 4rem;"></i></div>
+                <h5>Paper</h5>
+            </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 d-flex flex-column align-items-center">
+            <a class="link-info text-decoration-none text-center" href="http://github.com/llm-attacks/llm-attacks">
+                <div class="icon mb-2"><i class="bi-github" style="font-size: 4rem;"></i></div>
+                <h5>Code and Data</h5>
+            </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 d-flex flex-column align-items-center">
+            <a class="link-info text-decoration-none text-center" href="results.html">
+                <div class="icon mb-2"><i class="bi-bar-chart-line" style="font-size: 4rem;"></i></div>
+                <h5>Results</h5>
+            </a>
+        </div>
+    </div>
+
+    <div class="container-sm mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 content-wrapper"> <!-- Adjust col-lg-10 as needed -->
+                <h3>Abstract</h3>
+                <div class="text-start">
+                    <p class="mt-4">
+                        AI assistants such as ChatGPT are trained to respond to users by saying, "I am a large language
+                        model".
+                        This raises questions. Do such models ``know'' that they are LLMs and reliably act on this
+                        knowledge? Are they ``aware''
+                        of their current circumstances, such as being deployed to the public?
+                        We refer to a model's knowledge of itself and its circumstances as \textbf{situational
+                        awareness}.
+                        To quantify situational awareness in LLMs, we introduce a range of behavioral tests, based on
+                        question answering and
+                        instruction following. These tests form the \textbf{Situational Awareness Dataset (SAD)}, a
+                        benchmark comprising 7 task
+                        categories and over 13,000 questions.
+                        The benchmark tests numerous abilities, including the capacity of LLMs to (i) recognize their
+                        own generated text, (ii)
+                        predict their own behavior, (iii) determine whether a prompt is from internal evaluation or
+                        real-world deployment, and
+                        (iv) follow instructions that depend on self-knowledge.
+                        We evaluate 16 LLMs on SAD, including both base (pretrained) and chat models.
+                        While all models perform better than chance, even the highest-scoring model (Claude 3 Opus) is
+                        far from a human baseline
+                        on certain tasks. We also observe that performance on SAD is only partially predicted by metrics
+                        of general knowledge.
+                        Chat models, which are finetuned to serve as AI assistants, outperform their corresponding base
+                        models on SAD but not on
+                        general knowledge tasks.
+                        The purpose of SAD is to facilitate scientific understanding of situational awareness in LLMs by
+                        breaking it down into
+                        quantitative abilities. Situational awareness is important because it enhances a model's
+                        capacity for autonomous
+                        planning and action. While this has potential benefits from automation, it also introduces novel
+                        risks related to AI
+                        safety and control.
+                    </p>
+                </div>
+
+                <!-- Composition of SAD image -->
+                <h3 id="results" class="mt-5">Summary of Tasks</h3>
+                <div class="text-center mt-5">
+                    <img src="assets/SAD.png" alt="Composition of SAD" class="img-fluid" ,
+                        style="max-width: 900px; width: 100%;">
+                </div>
+
+
+
+                <!-- Results Table image -->
+                <h3 class="mt-5">Overall Results</h3>
+                <div class="text-center mt-5">
+                    <img src="assets/results_table.png" alt="Results Table" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-sm mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 content-wrapper"> <!-- This matches the abstract's column width -->
+                <div class="card bg-light">
+                    <div class="card-body position-relative">
+                        <button class="btn btn-secondary btn-sm position-absolute top-0 end-0 m-2"
+                            onclick="copyToClipboard()">
+                            <i class="bi bi-clipboard"></i> Copy
+                        </button>
+                        <h5 class="card-title">Citation</h5>
+                        <pre class="card-text font-monospace" style="white-space: pre-wrap; word-wrap: break-word;">
+@article{laine2024me,
+    title={Me, Myself and AI: The Situational Awareness Dataset for LLMs},
+    author={Laine, Rudolf and Chughtai, Bilal and Betley, Jan and Hariharan, Kaivalya and Scheurer, J{\'e}r{\'e}my and Balesni, Mikita and Hobbhahn, Marius and Meinke, Alexander and Evans, Owain},
+    journal={arXiv preprint arXiv:2307.15043},
+    year={2024}
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

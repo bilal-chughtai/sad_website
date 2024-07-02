@@ -1,0 +1,17 @@
+:root {
+    --bs-info: #8E4585;
+    --bs-info-rgb: 142,69,133;
+}
+
+.link-info {
+    color: #8E4585 !important;
+}
+
+.link-info:hover {
+    color: #6D3465 !important;
+}
+
+.content-wrapper img {
+    max-width: 800px; /* Adjust this value as needed */
+    width: 100%;
+}
