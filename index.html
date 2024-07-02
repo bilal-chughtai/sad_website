@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link href="./custom.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <script>
@@ -42,32 +43,32 @@
 
     <div class="row justify-content-center mt-4">
         <div class="col-lg-2 col-md-3 col-sm-4 d-flex flex-column align-items-center">
-            <a class="link-info text-decoration-none text-center" href="https://arxiv.org/abs/2307.15043">
+            <a class="link-info text-decoration-none text-center" href="https://arxiv.org/">
                 <div class="icon mb-2"><i class="bi-file-earmark-pdf" style="font-size: 4rem;"></i></div>
                 <h5>Paper</h5>
             </a>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-4 d-flex flex-column align-items-center">
-            <a class="link-info text-decoration-none text-center" href="http://github.com/llm-attacks/llm-attacks">
+            <a class="link-info text-decoration-none text-center" href="http://github.com/">
                 <div class="icon mb-2"><i class="bi-github" style="font-size: 4rem;"></i></div>
                 <h5>Code and Data</h5>
             </a>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-4 d-flex flex-column align-items-center">
-            <a class="link-info text-decoration-none text-center" href="results.html">
+            <a class="link-info text-decoration-none text-center" href="#results">
                 <div class="icon mb-2"><i class="bi-bar-chart-line" style="font-size: 4rem;"></i></div>
                 <h5>Results</h5>
             </a>
         </div>
     </div>
 
-    <div class="container-sm mt-5">
+    <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-lg-10 content-wrapper"> <!-- Adjust col-lg-10 as needed -->
+            <div class="col-lg-8 content-wrapper"> <!-- Adjust col-lg-10 as needed -->
                 <h3>Abstract</h3>
-                <div class="text-start">
+                <div class="text-justify">
                     <p class="mt-4">
                         AI assistants such as ChatGPT are trained to respond to users by saying, "I am a large language
                         model".
@@ -105,7 +106,7 @@
                 </div>
 
                 <!-- Composition of SAD image -->
-                <h3 id="results" class="mt-5">Summary of Tasks</h3>
+                <h3 id="tasks" class="mt-5">Summary of Tasks</h3>
                 <div class="text-center mt-5">
                     <img src="assets/SAD.png" alt="Composition of SAD" class="img-fluid" ,
                         style="max-width: 900px; width: 100%;">
@@ -114,7 +115,7 @@
 
 
                 <!-- Results Table image -->
-                <h3 class="mt-5">Overall Results</h3>
+                <h3 id="results" class="mt-5">Overall Results</h3>
                 <div class="text-center mt-5">
                     <img src="assets/results_table.png" alt="Results Table" class="img-fluid">
                 </div>
@@ -122,7 +123,15 @@
         </div>
     </div>
 
-    <div class="container-sm mt-5">
+<div class="container-sm col-lg-6">
+<div>
+    <div id="58dd1b65-a0bf-4726-8fc5-116bbf13bf3d" class="plotly-graph-div" style="height:800px; width:1200px;"></div>
+    <script
+        type="text/javascript">                                    window.PLOTLYENV = window.PLOTLYENV || {}; if (document.getElementById("58dd1b65-a0bf-4726-8fc5-116bbf13bf3d")) { Plotly.newPlot("58dd1b65-a0bf-4726-8fc5-116bbf13bf3d", [{ "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Situating Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "Plain Prompt", "showlegend": true, "visible": false, "x": [null], "y": [null], "type": "bar" }, { "name": "sad_lite - Situating Prompt", "showlegend": false, "visible": false, "x": ["llama-2-7b", "llama-2-7b-chat", "llama-2-13b", "llama-2-13b-chat", "llama-2-70b", "llama-2-70b-chat", "davinci-002", "gpt-3.5-turbo-0613", "gpt-4-base", "gpt-4-0613", "gpt-4-0125-preview", "claude-instant-1.2", "claude-2.1", "claude-3-haiku", "claude-3-sonnet", "claude-3-opus"], "y": [0.41883333333333334, 0.4524882028112449, 0.449539156626506, 0.5523305722891566, 0.5854347389558233, 0.6186827309236947, 0.4299106425702811, 0.5468732429718874, 0.6219528112449799, 0.7183077309236948, 0.7278855421686747, 0.6257228915662651, 0.6268835341365462, 0.6192527610441767, 0.6557595381526103, 0.7085160642570282], "type": "bar" }, { "name": "sad_lite - Plain Prompt", "showlegend": false, "visible": false, "x": ["llama-2-7b", "llama-2-7b-chat", "llama-2-13b", "llama-2-13b-chat", "llama-2-70b", "llama-2-70b-chat", "davinci-002", "gpt-3.5-turbo-0613", "gpt-4-base", "gpt-4-0613", "gpt-4-0125-preview", "claude-instant-1.2", "claude-2.1", "claude-3-haiku", "claude-3-sonnet", "claude-3-opus"], "y": [0.471816265060241, 0.38786470883534135, 0.42174999999999996, 0.48922314257028116, 0.4959026104417671, 0.5090065261044178, 0.4135, 0.4687028112449799, 0.5715793172690763, 0.6061714357429719, 0.576620983935743, 0.5599984939759037, 0.5734267068273093, 0.5417171184738956, 0.610015562248996, 0.6673584337349397], "type": "bar" }, { "name": "sad_minus - Situating Prompt", "showlegend": false, "visible": false, "x": ["llama-2-7b", "llama-2-7b-chat", "llama-2-13b", "llama-2-13b-chat", "llama-2-70b", "llama-2-70b-chat", "davinci-002", "gpt-3.5-turbo-0613", "gpt-4-base", "gpt-4-0613", "gpt-4-0125-preview", "claude-instant-1.2", "claude-2.1", "claude-3-haiku", "claude-3-sonnet", "claude-3-opus"], "y": [0.3235172486772486, 0.31829644514566197, 0.3483377790527188, 0.3725064511378849, 0.37234828711672086, 0.4028763093006949, 0.31720623468563613, 0.3856943541576466, 0.4091987935200192, 0.4661983392837537, 0.5417984483839718, 0.42260934343139156, 0.4481464235907474, 0.43511340652044533, 0.4638736203660285, 0.5110748453092013], "type": "bar" }, { "name": "sad_minus - Plain Prompt", "showlegend": false, "visible": false, "x": ["llama-2-7b", "llama-2-7b-chat", "llama-2-13b", "llama-2-13b-chat", "llama-2-70b", "llama-2-70b-chat", "davinci-002", "gpt-3.5-turbo-0613", "gpt-4-base", "gpt-4-0613", "gpt-4-0125-preview", "claude-instant-1.2", "claude-2.1", "claude-3-haiku", "claude-3-sonnet", "claude-3-opus"], "y": [0.34655042136801173, 0.29726186237011537, 0.33780412698412704, 0.3409179977688532, 0.33788210237776495, 0.3622710125581691, 0.3095472451246797, 0.3502802193410982, 0.385695338300303, 0.42437461631908596, 0.4261908583244552, 0.40541240937037804, 0.42658664041141137, 0.3912808441545203, 0.4445503968862326, 0.4833633885024298], "type": "bar" }, { "name": "sad - Situating Prompt", "showlegend": false, "visible": true, "x": ["llama-2-7b", "llama-2-7b-chat", "llama-2-13b", "llama-2-13b-chat", "llama-2-70b", "llama-2-70b-chat", "davinci-002", "gpt-3.5-turbo-0613", "gpt-4-base", "gpt-4-0613", "gpt-4-0125-preview", "claude-instant-1.2", "claude-2.1", "claude-3-haiku", "claude-3-sonnet", "claude-3-opus"], "y": [0.306621935062441, 0.31451886001381385, 0.33409929191848203, 0.37457609339707, 0.3521192826172025, 0.4043441628649523, 0.30124238055808966, 0.38287745246216476, 0.3918485065908847, 0.46699697262817025, 0.5477662824982631, 0.4385650451724299, 0.4579967186216233, 0.4559931693248161, 0.4980803390215089, 0.52744144622972], "type": "bar" }, { "name": "sad - Plain Prompt", "showlegend": false, "visible": true, "x": ["llama-2-7b", "llama-2-7b-chat", "llama-2-13b", "llama-2-13b-chat", "llama-2-70b", "llama-2-70b-chat", "davinci-002", "gpt-3.5-turbo-0613", "gpt-4-base", "gpt-4-0613", "gpt-4-0125-preview", "claude-instant-1.2", "claude-2.1", "claude-3-haiku", "claude-3-sonnet", "claude-3-opus"], "y": [0.3291267718361821, 0.3019693727958022, 0.32375273527490084, 0.348162532824091, 0.3228075434573348, 0.367101120286224, 0.293963642973904, 0.35649792091899846, 0.36760821782653413, 0.4211521844696456, 0.43128743049485935, 0.42484959321453264, 0.44037704376887293, 0.4114985684381215, 0.47073150763962135, 0.497743474819836], "type": "bar" }], { "barmode": "group", "height": 800, "legend": { "title": { "text": "Legend" } }, "shapes": [{ "line": { "color": "black", "dash": "dash", "width": 2 }, "name": "sad_lite - Random Chance", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.45, "y1": 0.45 }, { "line": { "color": "black", "dash": "dot", "width": 2 }, "name": "sad_lite - Upper Baseline", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.8246666666666667, "y1": 0.8246666666666667 }, { "line": { "color": "black", "dash": "dash", "width": 2 }, "name": "sad_minus - Random Chance", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.2866666666666666, "y1": 0.2866666666666666 }, { "line": { "color": "black", "dash": "dot", "width": 2 }, "name": "sad_minus - Upper Baseline", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.8954666666666666, "y1": 0.8954666666666666 }, { "line": { "color": "black", "dash": "dash", "width": 2 }, "name": "sad - Random Chance", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.2738095238095238, "y1": 0.2738095238095238 }, { "line": { "color": "black", "dash": "dot", "width": 2 }, "name": "sad - Upper Baseline", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.9066666666666666, "y1": 0.9066666666666666 }], "template": { "layout": { "colorway": ["#636EFA", "#EF553B", "#00CC96", "#AB63FA", "#FFA15A", "#19D3F3", "#FF6692", "#B6E880", "#FECB52", "#64C2A6", "#FF97FF", "#6F9CEB", "#F6C4A1", "#B99AFF", "#C2FFD8", "#FBE7B2", "#D4E09B", "#F9A3A4", "#A0E7E5", "#FD7C6E"], "height": 800, "legend": { "font": { "size": 20 } }, "margin": { "b": 220, "l": 100, "pad": 4, "r": 80, "t": 50 }, "title": { "font": { "size": 20 } }, "width": 1500, "xaxis": { "tickangle": 60, "tickfont": { "size": 20 }, "title": { "font": { "size": 20 }, "standoff": 140 } }, "yaxis": { "tickfont": { "size": 20 }, "title": { "font": { "size": 20 }, "standoff": 30 } } } }, "updatemenus": [{ "active": 2, "buttons": [{ "args": [{ "visible": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, false, false, false] }, { "shapes": [{ "line": { "color": "black", "dash": "dash", "width": 2 }, "name": "sad_lite - Random Chance", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.45, "y1": 0.45 }, { "line": { "color": "black", "dash": "dot", "width": 2 }, "name": "sad_lite - Upper Baseline", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.8246666666666667, "y1": 0.8246666666666667 }] }, { "title": "SAD_LITE Score" }], "label": "sad_lite", "method": "update" }, { "args": [{ "visible": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, false] }, { "shapes": [{ "line": { "color": "black", "dash": "dash", "width": 2 }, "name": "sad_minus - Random Chance", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.2866666666666666, "y1": 0.2866666666666666 }, { "line": { "color": "black", "dash": "dot", "width": 2 }, "name": "sad_minus - Upper Baseline", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.8954666666666666, "y1": 0.8954666666666666 }] }, { "title": "SAD_MINUS Score" }], "label": "sad_minus", "method": "update" }, { "args": [{ "visible": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true] }, { "shapes": [{ "line": { "color": "black", "dash": "dash", "width": 2 }, "name": "sad - Random Chance", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.2738095238095238, "y1": 0.2738095238095238 }, { "line": { "color": "black", "dash": "dot", "width": 2 }, "name": "sad - Upper Baseline", "type": "line", "x0": -0.5, "x1": 15.5, "y0": 0.9066666666666666, "y1": 0.9066666666666666 }] }, { "title": "SAD Score" }], "label": "sad", "method": "update" }], "direction": "down", "pad": { "r": 10, "t": 10 }, "showactive": true, "x": 1.05, "xanchor": "left", "y": 1, "yanchor": "top" }], "width": 1200, "xaxis": { "anchor": "y", "domain": [0.0, 0.94], "title": { "text": "Model" } }, "yaxis": { "anchor": "x", "domain": [0.0, 1.0], "range": [0, 1.01], "title": { "text": "Score" } }, "yaxis2": { "anchor": "x", "overlaying": "y", "range": [0, 1.01], "side": "right" } }, { "responsive": true }) };                            </script>
+                </div>
+</div>
+
+    <div class="container-sm mt-5 mb-5">
         <div class="row justify-content-center">
             <div class="col-lg-10 content-wrapper"> <!-- This matches the abstract's column width -->
                 <div class="card bg-light">
@@ -136,7 +145,7 @@
 @article{laine2024me,
     title={Me, Myself and AI: The Situational Awareness Dataset for LLMs},
     author={Laine, Rudolf and Chughtai, Bilal and Betley, Jan and Hariharan, Kaivalya and Scheurer, J{\'e}r{\'e}my and Balesni, Mikita and Hobbhahn, Marius and Meinke, Alexander and Evans, Owain},
-    journal={arXiv preprint arXiv:2307.15043},
+    journal={arXiv preprint arXiv:TODO},
     year={2024}
 }</pre>
                     </div>
