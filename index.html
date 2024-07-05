@@ -98,7 +98,16 @@
                 <h3>Summary of Research</h3>
                 <div class="text-justify">
                     <p class="mt-4">
-                        TODO: Add short version of abstract
+                        AI assistants such as ChatGPT are trained to act like AIs, for example when they say "I am a large language model". However, do such models really know that they are LLMs and reliably act on this knowledge? Are they aware of their current circumstances, such as whether they are deployed?  We refer to a model's knowledge of itself and its circumstances as <b>situational awareness</b>. 
+                    </p>
+                    <p class="mt-4">
+                        The <b>Situational Awareness Dataset (SAD)</b> quantifies situational awareness in LLMs using a range of behavioral tests. The benchmark compirses 7 task categories, 16 tasks, and over 12,000 questions.  Capabilities tested include the ability of LLMs to (i) recognize their own generated text, (ii) predict their own behavior, (iii) determine whether a prompt is from internal evaluation or real-world deployment, and (iv) follow instructions that depend on self-knowledge.
+                    </p>
+                    <p class="mt-4">
+                        While all models perform better than chance, even the highest-scoring model (Claude 3.5 Sonnet) is far from a human baseline on certain tasks. Performance on SAD is only partially predicted by MMLU score. Chat models, which are finetuned to serve as AI assistants, outperform their corresponding base models on SAD but not on general knowledge tasks.  
+                    </p>
+                    <p class="mt-4">
+                        Situational awareness is important because it enhances a model's capacity for autonomous planning and action. While this has potential benefits for automation, it also introduces novel risks related to AI safety and control. Code and latest results are available at https://situational-awareness-dataset.org.
                     </p>
                 </div>
 
