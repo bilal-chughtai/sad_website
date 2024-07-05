@@ -99,7 +99,7 @@
             </div>
         </div>
 
-                <div class="text-left">
+                <div class="text-left col-lg-10">
                     <p class="mt-4">
                         AI assistants such as ChatGPT are trained to act like AIs, for example when they say "I am a large language model". However, do such models really know that they are LLMs and reliably act on this knowledge? Are they aware of their current circumstances, such as whether they are deployed?  We refer to a model's knowledge of itself and its circumstances as <b>situational awareness</b>. 
                     </p>
@@ -110,7 +110,7 @@
                         While all models perform better than chance, even the highest-scoring model (Claude 3.5 Sonnet) is far from a human baseline on certain tasks. Performance on SAD is only partially predicted by MMLU score. Chat models, which are finetuned to serve as AI assistants, outperform their corresponding base models on SAD but not on general knowledge tasks.  
                     </p>
                     <p class="mt-4">
-                        Situational awareness is important because it enhances a model's capacity for autonomous planning and action. While this has potential benefits for automation, it also introduces novel risks related to AI safety and control. Code and latest results are available at https://situational-awareness-dataset.org.
+                        Situational awareness is important because it enhances a model's capacity for autonomous planning and action. While this has potential benefits for automation, it also introduces novel risks related to AI safety and control.
                     </p>
                 </div>
 
@@ -120,6 +120,7 @@
                 <div class="text-center mt-0">
                     <img src="assets/SAD.png" alt="Composition of SAD" class="img-fluid" ,
                         style="max-width: 900px; width: 100%;">
+                        <figcaption class="mt-2">An outline of the structure of SAD. We divide situational awareness into 3 aspects - self-knowledge, situational inferences, and taking actions. Within each aspect, we have various categories of related tasks. There are 7 categories and 16 tasks in total. Examples are shown on the right; see the paper appendices for more examples.</figcaption>
                 </div>
 
                 
@@ -146,6 +147,7 @@
             <div class="col-lg-8">
                 <div class="text-center mb-5">
                     <img src="assets/results_table.png" alt="Results Table" class="img-fluid">
+                    <figcaption class="mt-2">A table of results on LLMs we test. The first column is overall SAD score. SAD-lite and SAD-mini refer to subsets of SAD that some users may prefer to run; see the <a href="https://github.com/LRudL/sad/blob/main/README.md">README</a> for more details. The following columns show scores for the 7 categories, grouped by which aspect of situational awareness is being tested. The upper baseline is either based on a human baseline (where expert humans answered as if they were LLMs), or, where that does not make sense, it is 100% (we argue in the paper appendix that these tasks are clearly solvable). "Self-rec." is self-recognition, "id-lev." is ID-leverage, "anti-im." is anti-imitation.</figcaption>
                 </div>
     
                 <div class="card bg-light mb-5">
